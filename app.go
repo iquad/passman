@@ -6,12 +6,17 @@ type App struct {
 	Logger *zap.SugaredLogger
 }
 
-func (app *App) InitApp() error {
-	logger, _ := zap.NewProduction()
-	defer logger.Sync()
-	sugar := logger.Sugar()
+func createAppSingleton() (*App, error) {
+	var err error
+	err = nil
 
-	app.Logger = sugar
+	app := &App{
+		Logger: initLogger(),
+	}
 
-	return nil
+	return app, err
+}
+
+func (app *App) start() {
+	app.Logger.Infow("app started")
 }
