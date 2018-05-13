@@ -1,0 +1,93 @@
+.btn {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .025em;
+  color: $primary;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+
+  &:hover {
+    color: darken(#525f7f, 10%);
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
+
+  &:active {
+    color: darken(#525f7f, 5%);
+    background-color: #f6f9fc;
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  }
+}
+
+.btn-primary {
+  @include buttonFrom($primary, #fff);
+}
+
+.btn-secondary {
+  @include buttonFrom(#5f4b8b, #fff);
+}
+
+.btn-success {
+  @include buttonFrom($green, #fff);
+}
+
+.btn-blue {
+  @include buttonFrom($blue, #fff);
+}
+
+.btn-red {
+  @include buttonFrom($red, #fff);
+}
+
+.btn-yellow {
+  @include buttonFrom($yellow, #fff);
+}
+
+.btn-dark {
+  @include buttonFrom($dark, #fff);
+}
+
+.btn-grey {
+  @include buttonFrom($grey, darken($primary, 10%));
+}
+
+.btn-outlet-primary {
+  @include outlineButtonFrom($primary);
+}
+
+.btn-outlet-secondary {
+  @include outlineButtonFrom(#5f4b8b);
+}
+
+.btn-outlet-success {
+  @include outlineButtonFrom($green);
+}
+
+.btn-outlet-blue {
+  @include outlineButtonFrom($blue);
+}
+
+.btn-outlet-red {
+  @include outlineButtonFrom($red);
+}
+
+.btn-outlet-yellow {
+  @include outlineButtonFrom($yellow);
+}
+
+.btn-outlet-dark {
+  @include outlineButtonFrom($dark);
+}
