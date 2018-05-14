@@ -1,0 +1,19 @@
+{
+  "level": "debug",
+  "development": true,
+  "encoding": "json",
+  "outputPaths": ["var/log/dev.log", "stdout"],
+  "disableCaller": false,
+  "errorOutputPaths": ["stderr"],
+  "encoderConfig": {
+    "messageKey": "message",
+    "levelKey": "level",
+    "levelEncoder": "lowercase",
+    "callerKey": "caller",
+    "callerEncoder": "short",
+    "timeKey": "time",
+    "timeEncoder": "iso8601",
+    "durationKey": "duration",
+    "durationEncoder": "string"
+  }
+}

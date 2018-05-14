@@ -1,0 +1,23 @@
+.form-input {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+  box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 22px;
+  color: #32325d;
+}
+
+.form-input input[type=email], .form-input input[type=text] {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 9px 13px;
+  background: transparent;
+  font: inherit;
+  color: #32325d;
+}

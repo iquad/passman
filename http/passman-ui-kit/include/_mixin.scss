@@ -1,0 +1,55 @@
+@mixin buttonFrom($color, $textColor) {
+  background: $color;
+  color: $textColor !important;
+
+  &:hover {
+    background: lighten($color, 5%);
+  }
+
+  &:active {
+    background: darken($color, 5%);
+  }
+}
+
+@mixin outlineButtonFrom($color) {
+  border: 1px solid $color;
+  background: white;
+  color: $color;
+
+  &:hover {
+    background: $color;
+    color: white;
+  }
+
+  &:active {
+    background: $color;
+    color: white;
+  }
+}
+
+@mixin boxed() {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 40px 40px 40px 120px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  -webkit-transition-property: color,background-color,-webkit-box-shadow,-webkit-transform;
+  transition-property: color,background-color,-webkit-box-shadow,-webkit-transform;
+  transition-property: color,background-color,box-shadow,transform;
+  transition-property: color,background-color,box-shadow,transform,-webkit-box-shadow,-webkit-transform;
+  -webkit-transition-duration: .15s;
+  transition-duration: .15s;
+}

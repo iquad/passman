@@ -1,0 +1,117 @@
+@import "include/camphor";
+@import "include/variables";
+@import "include/mixin";
+@import "include/typography";
+@import "include/buttons";
+@import "include/input";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F7F8F9;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 62.5%;
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "pnum";
+  font-feature-settings: "pnum";
+  font-variant-numeric: proportional-nums;
+
+  * {
+    outline: none;
+  }
+}
+
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+blockquote, body, button, dd, dl, figure, h1, h2, h3, h4, h5, h6, ol, p, pre, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.color-primary {
+  color: $primary;
+}
+
+.bg-color-primary {
+  background: $primary;
+  color: #fff;
+}
+
+.common-Bodytext {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: $primary;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.boxed {
+  @include boxed
+}
+
+.col-half {
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+
+.sidebar {
+  width: 250px;
+  padding: 5px 10px;
+}
+
+.styleguide {
+  flex-wrap: nowrap;
+  margin-top: 40px;
+}
+
+.guide {
+  padding: 5px 10px;
+  width: 100%;
+  display: flex;
+}
+
+.buttons > .btn {
+  margin: 2px 4px;
+}
+
+.guide-container {
+  padding: 8px;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
