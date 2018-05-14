@@ -13,3 +13,4 @@
 
 .idea/
 vendor/
+./http/ui/node_modules
