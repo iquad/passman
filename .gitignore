@@ -13,5 +13,5 @@
 
 .idea/
 vendor/
-./http/ui/node_modules
+http/ui/node_modules
 var/log/*
